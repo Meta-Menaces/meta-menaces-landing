@@ -1,4 +1,4 @@
-// import { randomNumber } from './utils';
+// import { randomNumber } from "./utils";
 import { gsap } from "gsap";
 
 const DOM = {
@@ -39,33 +39,33 @@ export class Intro {
       gsap.killTweensOf([DOM.enterBackground, this.DOM.circleText]);
 
       gsap.to(DOM.enterBackground, {
-        duration: 2,
+        duration: 1,
         ease: "expo",
         scale: 1.4,
+        filter: "drop-shadow(0 0 0.5rem rgba(255, 0, 255, 0.5))",
       });
       gsap.to(this.DOM.circleText, {
-        duration: 2,
+        duration: 1,
         ease: "expo",
         scale: 1.15,
         rotation: (i) => (i % 2 ? "-=90" : "+=90"),
-        opacity: 0.9,
-        filter: "brightness(110%)",
+        opacity: 0.4,
       });
     };
     this.enterMouseLeaveEv = () => {
       // gsap.killTweensOf([DOM.enterBackground,this.DOM.circleText]);
       gsap.to(DOM.enterBackground, {
-        duration: 1.6,
+        duration: 1,
         ease: "expo",
         scale: 1,
+        filter: "drop-shadow(0 0 1rem rgba(255, 255, 255, 0.6))",
       });
       gsap.to(this.DOM.circleText, {
-        duration: 2,
+        duration: 1,
         ease: "expo",
         scale: 1,
         rotation: (i) => (i % 2 ? "+=120" : "-=120"),
         opacity: 1,
-        filter: "brightness(100%)",
         stagger: {
           amount: -0.2,
         },
@@ -129,7 +129,7 @@ export class Intro {
       .to(
         DOM.enterCtrl,
         {
-          duration: 2,
+          duration: 0.6,
           ease: "back.in",
           scale: 0.2,
           opacity: 0,
@@ -139,7 +139,7 @@ export class Intro {
       .to(
         this.DOM.circleText,
         {
-          duration: 1.6,
+          duration: 0.8,
           ease: "back.in",
           scale: 0,
           opacity: 0,
