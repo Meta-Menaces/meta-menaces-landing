@@ -30,7 +30,7 @@ body {
   --font-weight-circle-3: 400;
   --font-circle-4: niagara, serif;
   --font-weight-circle-4: 300;
-  --dim-button: 90px;
+  --dim-button: 70px;
 
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -139,6 +139,16 @@ a:focus-visible {
   margin: 0 0 1rem;
   font-weight: 500;
   font-family: ambroise-firmin-std, serif;
+}
+
+.frame__logo {
+  width: auto;
+  max-width: 100px;
+  max-height: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  z-index: 2;
 }
 
 .enter {
