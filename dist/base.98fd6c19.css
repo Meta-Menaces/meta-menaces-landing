@@ -211,13 +211,6 @@ a:focus-visible {
   text-align: center;
 }
 
-.content__footer {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding: 3rem 0;
-}
-
 .js .content {
   opacity: 0;
 }
@@ -230,6 +223,25 @@ a:focus-visible {
   margin: 0;
   pointer-events: none;
   will-change: transform;
+}
+
+.content__footer {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.content__footer p,
+.content__footer a {
+  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 4.8vw, 2rem);
+  text-align: center;
+}
+
+,
+.content__footer a {
+  cursor: pointer;
 }
 
 .circles {
