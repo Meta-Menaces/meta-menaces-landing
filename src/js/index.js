@@ -1,4 +1,4 @@
-import { preloadFonts } from "./utils";
+import { preloadFonts, setCurrentYear } from "./utils";
 import { Intro } from "./intro";
 
 const intro = new Intro(document.querySelector(".circles"));
@@ -10,6 +10,7 @@ Promise.all([preloadFonts("ozz0ery")])
     document.body.classList.remove("loading");
     // start intro
     intro.start();
+    setCurrentYear();
   })
   .catch((err) => {
     console.error(err);

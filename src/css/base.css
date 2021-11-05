@@ -203,11 +203,19 @@ a:focus-visible {
   flex-direction: column;
   width: 100vw;
   padding: 2rem;
+  margin-top: 5rem;
   height: calc(100vh - 13rem);
   position: relative;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+}
+
+.content__footer {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
 .js .content {
@@ -243,32 +251,35 @@ a:focus-visible {
 }
 
 .circles__text--1 {
-  font-size: 23vmin;
-  font-size: clamp(150px, 23vmin, 160px);
+  font-size: 18.5rem;
+  font-size: clamp(240px, 18.5rem, 300px);
   font-family: var(--font-circle-1);
   font-weight: var(--font-weight-circle-1);
   fill: var(--color-text-circle-1);
 }
 
 .circles__text--2 {
-  font-size: 14vmin;
-  font-size: clamp(110px, 14vmin, 150px);
+  font-size: 11rem;
+  letter-spacing: 24px;
+  font-size: clamp(130px, 11rem, 150px);
   font-family: var(--font-circle-2);
   font-weight: var(--font-weight-circle-2);
   fill: var(--color-text-circle-2);
 }
 
 .circles__text--3 {
-  font-size: 11vmin;
-  font-size: clamp(95px, 11vmin, 110px);
+  font-size: 7rem;
+  letter-spacing: 42px;
+  font-size: clamp(100px, 7rem, 130px);
   font-family: var(--font-circle-3);
   font-weight: var(--font-weight-circle-3);
   fill: var(--color-text-circle-3);
 }
 
 .circles__text--4 {
-  font-size: 8.5vmin;
-  font-size: clamp(85px, 8.5vmin, 95px);
+  font-size: 5rem;
+  letter-spacing: 6px;
+  font-size: clamp(50px, 5rem, 85px);
   font-family: var(--font-circle-4);
   font-weight: var(--font-weight-circle-4);
   fill: var(--color-text-circle-4);

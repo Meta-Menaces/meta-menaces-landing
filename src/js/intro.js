@@ -49,7 +49,7 @@ export class Intro {
         ease: "expo",
         scale: 1.15,
         rotation: (i) => (i % 2 ? "-=90" : "+=90"),
-        opacity: 0.4,
+        opacity: 0.8,
       });
     };
     this.enterMouseLeaveEv = () => {
@@ -142,7 +142,7 @@ export class Intro {
           duration: 0.8,
           ease: "back.in",
           scale: 0,
-          opacity: 0,
+          opacity: 0.6,
           stagger: {
             amount: -0.4,
           },
