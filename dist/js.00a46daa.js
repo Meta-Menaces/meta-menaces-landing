@@ -123,7 +123,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.randomNumber = exports.preloadFonts = void 0;
+exports.setCurrentYear = exports.randomNumber = exports.preloadFonts = void 0;
 
 // Preload fonts
 var preloadFonts = function preloadFonts(id) {
@@ -149,6 +149,8 @@ var setCurrentYear = function setCurrentYear() {
   var currentYear = new Date().getFullYear();
   document.querySelector("#year").innerHTML = currentYear;
 };
+
+exports.setCurrentYear = setCurrentYear;
 },{}],"TNS6":[function(require,module,exports) {
 "use strict";
 

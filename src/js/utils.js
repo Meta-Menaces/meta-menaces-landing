@@ -18,4 +18,4 @@ const setCurrentYear = () => {
   document.querySelector("#year").innerHTML = currentYear;
 };
 
-export { preloadFonts, randomNumber };
+export { preloadFonts, randomNumber, setCurrentYear };
