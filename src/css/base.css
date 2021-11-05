@@ -31,13 +31,18 @@ body {
   --font-circle-4: niagara, serif;
   --font-weight-circle-4: 300;
   --dim-button: 80px;
-  --dim-button-mobile: 40px;
+  --dim-button-mobile: 44px;
 
   color: var(--color-text);
   background-color: var(--color-bg);
   font-family: modesto-condensed, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #ffa9e7;
+  color: #fefefe;
 }
 
 /* Page Loader */
