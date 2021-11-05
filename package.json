@@ -21,7 +21,7 @@
     "url": "https://github.com/saleebm/meta-menaces-landing-page/issues"
   },
   "dependencies": {
-    "gsap": "^3.6.0",
+    "gsap": "^3.8.0",
     "parcel-bundler": "^1.12.4",
     "splitting": "^1.0.6"
   }
